@@ -6,8 +6,25 @@
 	align-items: center;
 
 	&-title {
-		width: 180px;
+		width: 135px;
 		display: flex;
+		align-items: center;
+
+		&-dot {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #96c196;
+			margin-right: 16px;
+		}
+
+		> p {
+			color: #d9d9d9;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: 12.6px;
+		}
 	}
 
 	&-running-line {
@@ -16,7 +33,6 @@
 		overflow: hidden;
 
 		.running-text {
-			
 		}
 	}
 
@@ -24,11 +40,26 @@
 		width: 96px;
 		display: flex;
 		justify-content: center;
+
+		> button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 48px;
+			height: 32px;
+			border: 1px solid rgba(255, 255, 255, 0.16);
+			background: linear-gradient(
+				123deg,
+				rgba(214, 163, 228, 0) 0%,
+				rgba(214, 163, 228, 0.07) 100%
+			);
+			border-radius: 32px;
+			cursor: pointer;
+		}
 	}
 }
 
 .rfm-child {
-
 	> p {
 		color: #fff;
 		font-size: 14px;
@@ -36,4 +67,8 @@
 		font-weight: 400;
 		opacity: 0.4;
 	}
+}
+
+.marquee-block {
+	
 }

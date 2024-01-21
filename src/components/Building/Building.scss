@@ -93,15 +93,16 @@
 				.swiper-slide-active {
 					border-radius: 32px;
 					width: 404px !important;
-					height: 582px !important;
+					max-height: 582px !important;
 				}
 
 				.swiper-slide {
 					border-radius: 32px;
 					background-color: #fff;
 					width: 372px;
-					height: 486px;
-					transition: transform 0.3s ease;
+					max-height: 486px;
+					height: 100%;
+					transition: max-height 0.3s ease-in-out;
 				}
 
 				.card1 {

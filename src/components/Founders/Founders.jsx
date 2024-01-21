@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Founders.scss';
+import Animation from '../UI/Animation/Animation'
 
 const Founders = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);
@@ -54,6 +55,7 @@ const Founders = () => {
 	};
 
 	return (
+		<Animation>
 		<div className='founders'>
 			<div className='founders-tab'>
 				<div className='founders-tab-left'>
@@ -67,27 +69,33 @@ const Founders = () => {
 					<div className='founders-tab-right-border'></div>
 				</div>
 			</div>
-			{slides.map((slide, index) => (
-				<div
-					key={index}
-					className={`founders-main ${currentSlide === index ? '' : 'hide'}`}
-					style={{
-						backgroundImage: `url(${slide.backgroundImage})`,
-					}}
-				>
-					<div className='founders-main-left'>
-						<h1 className='founders-main-left-header'>{slide.header}</h1>
-						<div className='founders-main-left-counter'>{slide.count} / 04</div>
-						<div className='founders-main-left-name'>{slide.name}</div>
-						<div className='founders-main-left-details'>{slide.details}</div>
-						<div className='founders-main-left-quote'>
-							<div className='founders-main-left-quote-img'>“</div>
-							<div className='founders-main-left-quote-text'>{slide.text}</div>
+			<div className='slides-wrapper'>
+				{slides.map((slide, index) => (
+					<div
+						key={index}
+						className={`founders-main ${currentSlide === index ? '' : 'hide'}`}
+						style={{
+							backgroundImage: `url(${slide.backgroundImage})`,
+						}}
+					>
+						<div className='founders-main-left'>
+							<h1 className='founders-main-left-header'>{slide.header}</h1>
+							<div className='founders-main-left-counter'>
+								{slide.count} / 04
+							</div>
+							<div className='founders-main-left-name'>{slide.name}</div>
+							<div className='founders-main-left-details'>{slide.details}</div>
+							<div className='founders-main-left-quote'>
+								<div className='founders-main-left-quote-img'>“</div>
+								<div className='founders-main-left-quote-text'>
+									{slide.text}
+								</div>
+							</div>
 						</div>
+						<div className='founders-main-right'></div>
 					</div>
-					<div className='founders-main-right'></div>
-				</div>
-			))}
+				))}
+			</div>
 
 			<div className='founders-bottom'>
 				<div className='founders-bottom-block'>
@@ -103,6 +111,7 @@ const Founders = () => {
 				</div>
 			</div>
 		</div>
+		</Animation>
 	);
 };
 

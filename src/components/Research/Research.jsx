@@ -1,8 +1,10 @@
 import React from 'react';
 import './Research.scss';
+import Animation from '../UI/Animation/Animation'
 
 const Research = () => {
 	return (
+		<Animation>
 		<div className='research'>
 			<div className='research-right'>
 				<div className='research-right-title'>
@@ -21,6 +23,7 @@ const Research = () => {
 				<div className='research-left-img'></div>
 			</div>
 		</div>
+		</Animation>
 	);
 };
 
