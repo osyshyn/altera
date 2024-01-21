@@ -1,0 +1,78 @@
+.research {
+	width: 1400px;
+	height: 563px;
+	display: flex;
+	background-color: white;
+	border-radius: 32px;
+	margin-bottom: 150px;
+
+	&-right {
+		height: 563px;
+		width: 50%;
+		background-color: white;
+		border-radius: 32px 0 0 32px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		margin-left: 100px;
+
+		&-title {
+			background-color: white;
+			margin-bottom: 24px;
+			display: flex;
+			align-items: center;
+
+			&-dot {
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background-color: #96c8a2;
+				margin-right: 5px;
+			}
+
+			&-text {
+				background-color: white;
+				color: #000;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 800;
+				line-height: 18px;
+			}
+		}
+
+		&-header {
+			background-color: white;
+			color: #000;
+			margin-bottom: 24px;
+			font-size: 55px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 120%;
+		}
+
+		&-text {
+			background-color: white;
+			color: #000;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%;
+		}
+	}
+
+	&-left {
+		height: 563px;
+		width: 57%;
+		background-image: url('../../../public/img/research.png');
+		border-radius: 0 32px 32px 0;
+
+		&-img {
+			width: 18%;
+			height: 563px;
+			background-image: linear-gradient(to right, white 50%, transparent),
+				url('../../../public/img/research.png');
+			opacity: 1;
+		}
+	}
+}

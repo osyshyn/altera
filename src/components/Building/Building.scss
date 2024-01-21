@@ -1,0 +1,153 @@
+.building {
+	width: 1400px;
+	height: 880px;
+	border-radius: 32px;
+	display: flex;
+	background: #141414;
+	margin-bottom: 110px;
+
+	&-left {
+		width: 470px;
+		margin-left: 100px;
+		background: #141414;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&-img {
+			height: 166px;
+			width: 73px;
+			background: #141414;
+		}
+
+		&-title {
+			background: #141414;
+
+			&-first {
+				background: #141414;
+				display: flex;
+				align-items: center;
+
+				&-dot {
+					background: #96c8a2;
+					width: 16px;
+					height: 16px;
+					border-radius: 50%;
+					margin-right: 10px;
+				}
+
+				&-text {
+					color: #fff;
+					font-size: 55px;
+					font-style: normal;
+					font-weight: 300;
+					line-height: 120%;
+					background-color: #141414;
+				}
+			}
+
+			&-second {
+				color: #fff;
+				font-size: 55px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 120%;
+				background-color: #141414;
+				display: flex;
+			}
+
+			&-text {
+				color: #fff;
+				font-size: 55px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 120%;
+				text-transform: uppercase;
+				background-color: #141414;
+				display: flex;
+			}
+		}
+
+		&-empty {
+			height: 166px;
+			background: #141414;
+		}
+	}
+
+	&-right {
+		width: 830px;
+
+		&-top {
+			width: 830px;
+			height: 111px;
+		}
+
+		&-middle {
+			width: 830px;
+			height: 582px;
+
+			&-swiper {
+				width: 100%;
+				height: 100%;
+
+				.swiper-slide-active {
+					border-radius: 32px;
+					width: 404px !important;
+					height: 582px !important;
+				}
+
+				.swiper-slide {
+					border-radius: 32px;
+					background-color: #fff;
+					width: 372px;
+					height: 486px;
+					transition: transform 0.3s ease;
+				}
+
+				.card1 {
+					background-image: url('../../../public/img/buildingCards/card1.png');
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+				.card2 {
+					background-image: url('../../../public/img/buildingCards/card2.png');
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+				.card3 {
+					background-image: url('../../../public/img/buildingCards/card3.png');
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+
+		&-bottom {
+			width: 830px;
+			height: 187px;
+			display: flex;
+
+			> p {
+				width: 387px;
+				margin-top: 24px;
+				color: #f3efef;
+				font-size: 23px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 26.4px;
+				margin-right: 130px;
+			}
+
+			> img {
+			}
+		}
+	}
+}
+
+.swiper-pagination {
+	margin-left: 65px;
+	margin-bottom: 35px;
+}

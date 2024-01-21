@@ -1,0 +1,39 @@
+.header {
+	width: 1400px;
+	height: 56px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&-title {
+		width: 180px;
+		display: flex;
+	}
+
+	&-running-line {
+		width: 1124px;
+		display: flex;
+		overflow: hidden;
+
+		.running-text {
+			
+		}
+	}
+
+	&-button {
+		width: 96px;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.rfm-child {
+
+	> p {
+		color: #fff;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		opacity: 0.4;
+	}
+}
