@@ -28,7 +28,7 @@ const Animation = ({children, variant='slide-bottom', delay=300, className}) => 
 		observer.current.observe(divRef.current);
 
 		return () => observer.current.disconnect()
-	}, [divRef, observer, setIsVisible]);
+	}, [divRef, observer, setIsVisible, delay]);
 
 	return <div ref={divRef} className={`${s.animation} ${variant ? s[variant] : ''} ${className ? className : ''} ${isVisible ? s.active : ''}`}>
 		{children}
