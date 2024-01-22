@@ -150,6 +150,11 @@
 						cursor: pointer;
 						text-decoration: none;
 						margin-bottom: 16px;
+						transition: all 0.3s;
+					}
+
+					> a:hover {
+						color: #96c8a2;
 					}
 				}
 			}

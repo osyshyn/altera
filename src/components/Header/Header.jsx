@@ -12,9 +12,17 @@ const Header = () => {
 			</div>
 			<div className='header-running-line'>
 				<Marquee direction='right' speed='80' className='marquee-block'>
-					<p className='running-text'>
-						Announcing our $2M pre-seed fundraise, led by Andreesen Horowitz
-					</p>
+					<div className='header-running-line-text-wrapper'>
+						<p className='running-text'>
+							Announcing our $2M pre-seed fundraise, led by Andreesen Horowitz
+						</p>
+						<div className="vertical-line"></div>
+						<p className='running-text'>
+							We are ex-google ai and MIT professors shutting down our research
+							lab to advance agent gaming
+						</p>
+						<div className="vertical-line"></div>
+					</div>
 				</Marquee>
 			</div>
 			<div className='header-button'>

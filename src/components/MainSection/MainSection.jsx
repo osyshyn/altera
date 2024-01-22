@@ -40,7 +40,41 @@ const MainSection = () => {
 							impossible agent first gaming experiences
 						</p>
 					</Animation>
-					<div className='main-section-content-buttons'></div>
+					<Animation delay={900} variant='slide-bottom'>
+						<div className='main-section-content-buttons'>
+							<button className='main-section-content-buttons-down main-button'>
+								<svg
+									className='down-arrow'
+									width='16'
+									height='18'
+									viewBox='0 0 16 18'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'
+								>
+									<g id='SVG' clip-path='url(#clip0_218_11738)'>
+										<path
+											id='Vector'
+											d='M8.9599 0.277253L8.70546 14.8126L9.53103 14.8258C9.70558 13.8891 10.2075 13.0326 10.9586 12.3896L13.8612 9.77656L15.0248 10.8997L7.79554 17.4076L0.832031 10.6856L2.03694 9.60089L4.75184 12.2216C5.52818 12.895 6.02038 13.8051 6.13956 14.7874L7.00085 14.8014L7.2731 0.25L8.9599 0.277253Z'
+											fill='#141414'
+										/>
+									</g>
+									<defs>
+										<clipPath id='clip0_218_11738'>
+											<rect
+												width='15'
+												height='18'
+												fill='white'
+												transform='translate(0.5)'
+											/>
+										</clipPath>
+									</defs>
+								</svg>
+							</button>
+							<button className='main-section-content-buttons-more main-button'>
+								Learn More
+							</button>
+						</div>
+					</Animation>
 				</div>
 				<img
 					className='main-img'
