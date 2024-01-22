@@ -4,5 +4,6 @@ import Research from './Research/Research';
 import Founders from './Founders/Founders';
 import Building from './Building/Building';
 import Footer from './Footer/Footer';
+import Imagine from './Imagine/Imagine';
 
-export { Header, MainSection, Research, Founders, Building, Footer };
+export { Header, MainSection, Research, Founders, Building, Footer, Imagine };

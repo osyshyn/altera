@@ -8,7 +8,22 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-image: radial-gradient(circle, #141414, #313a43, #436771, #5e9891, #96c8a2);
+	text-align: center;
+	background-image: linear-gradient(
+		to bottom,
+		#141414,
+		#1c1c1e,
+		#232529,
+		#292e35,
+		#2f3740,
+		#364550,
+		#3c5460,
+		#42646e,
+		#4c7d81,
+		#5d9690,
+		#75b09b,
+		#96c8a2
+	);
 	opacity: 1;
 
 	&.fadeOut {
@@ -17,15 +32,18 @@
 	}
 
 	&-content {
-		font-size: 85px;
+		font-size: 90px;
 		font-family: Inter;
 		letter-spacing: 5px;
 		color: #96c8a2;
 		margin-bottom: 150px;
 	}
 
-	> span {
-		width: 70%;
+	.text {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		font-size: 40px;
 		text-align: center;
 	}
 }

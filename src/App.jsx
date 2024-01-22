@@ -7,36 +7,33 @@ import {
 	Founders,
 	Building,
 	Footer,
+	Imagine,
 } from './components';
 import Preloader from './components/Preloader/Preloader';
 
 function App() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [onFade, setOnFade] = useState(false);
-	const [textStart, setTextStart] = useState(false);
 
 	useEffect(() => {
 		setTimeout(() => {
 			setOnFade(true);
-		}, 9500);
-
-		setTimeout(() => {
-			setTextStart(true);
-		}, 3000);
+		}, 4000);
 
 		setTimeout(() => {
 			setIsLoading(false);
-		}, 10000);
+		}, 4500);
 	}, []);
 
 	return isLoading ? (
-		<Preloader onFinish={onFade} textStart={textStart}/>
+		<Preloader onFinish={onFade}/>
 	) : (
 		<div className='app-wrapper'>
 			<Header />
 			<MainSection />
-			<Research />
 			<Building />
+			<Research />
+			<Imagine />
 			<Founders />
 			<Footer />
 		</div>

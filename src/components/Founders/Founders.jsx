@@ -10,26 +10,16 @@ const Founders = () => {
 			id: 1,
 			header: 'Meet our founders',
 			count: '01',
-			name: 'DR. ANDREW AHN, CSO',
-			details: 'Scientist, Ritt professor at Columbia, and MIT PHD in math',
-			text: 'Winner of the MIT Johnson Prize in Mathematics and ublished numerous times in top physics and math journals',
-			backgroundImage: '/img/buildingBackgrounds/1.png',
-			img: '/img/photos/1.png',
+			name: 'DR. Robert Yang, CEO',
+			details: 'COMPUTATIAONAL NEUROSCIENTIST, hEAD OF MIT MetaConscious Group',
+			text: "WinLeader of MIT's MetaConscious Group. Raised over $3M to advance his research.",
+			backgroundImage: '/img/buildingBackgrounds/4.png',
+			img: '/img/photos/4.png',
 		},
 		{
 			id: 2,
 			header: 'Meet our founders',
 			count: '02',
-			name: 'SHUYING LUO, CTO',
-			details: '8 years of building software and AI at Google',
-			text: "Created the LLM powering the first AI version of GoogleSheets/Docs/Slides for 500k WAU's.",
-			backgroundImage: '/img/buildingBackgrounds/2.png',
-			img: '/img/photos/2.png',
-		},
-		{
-			id: 3,
-			header: 'Meet our founders',
-			count: '03',
 			name: 'NICO CHRISTIE, CBO',
 			details: 'Experienced tech entreprenuer and MIT MBA',
 			text: 'Built a company from launch to ~200k users and $2M+ ARR as head of product, growth, and partnerships. Raised $15M over three venture rounds',
@@ -37,14 +27,24 @@ const Founders = () => {
 			img: '/img/photos/3.png',
 		},
 		{
+			id: 3,
+			header: 'Meet our founders',
+			count: '03',
+			name: 'SHUYING LUO, CTO',
+			details: '8 years of building software and AI at Google',
+			text: "Created the LLM powering the first AI version of GoogleSheets/Docs/Slides for 500k WAU's.",
+			backgroundImage: '/img/buildingBackgrounds/2.png',
+			img: '/img/photos/2.png',
+		},
+		{
 			id: 4,
 			header: 'Meet our founders',
 			count: '04',
-			name: 'DR. Robert Yang, CEO',
-			details: 'COMPUTATIAONAL NEUROSCIENTIST, hEAD OF MIT MetaConscious Group',
-			text: "WinLeader of MIT's MetaConscious Group. Raised over $3M to advance his research.",
-			backgroundImage: '/img/buildingBackgrounds/4.png',
-			img: '/img/photos/4.png',
+			name: 'DR. ANDREW AHN, CSO',
+			details: 'Scientist, Ritt professor at Columbia, and MIT PHD in math',
+			text: 'Winner of the MIT Johnson Prize in Mathematics and ublished numerous times in top physics and math journals',
+			backgroundImage: '/img/buildingBackgrounds/1.png',
+			img: '/img/photos/1.png',
 		},
 	];
 
@@ -128,10 +128,18 @@ const Founders = () => {
 						<div className='founders-bottom-block-border'></div>
 					</div>
 					<div className='founders-bottom-buttons'>
-						<button onClick={prevSlide} disabled={currentSlide === 0} className={currentSlide === 0 ? 'disable' : ''}>
+						<button
+							onClick={prevSlide}
+							disabled={currentSlide === 0}
+							className={currentSlide === 0 ? 'disable' : ''}
+						>
 							<img className='left-arrow' src='/img/left-arrow.svg' alt='' />
 						</button>
-						<button onClick={nextSlide} disabled={currentSlide === 3} className={currentSlide === 3 ? 'disable' : ''}>
+						<button
+							onClick={nextSlide}
+							disabled={currentSlide === 3}
+							className={currentSlide === 3 ? 'disable' : ''}
+						>
 							<img className='right-arrow' src='/img/right-arrow.svg' alt='' />
 						</button>
 					</div>

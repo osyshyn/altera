@@ -1,22 +1,21 @@
 import React from 'react';
 import './Preloader.scss';
 import { RandomReveal } from 'react-random-reveal';
-import {TypeAnimation} from 'react-type-animation'
+import Animation from '../UI/Animation/Animation';
 
-const Preloader = ({ onFinish, textStart }) => {
+const Preloader = ({ onFinish }) => {
 	return (
 		<div className={`preloader ${onFinish ? 'fadeOut' : ''}`}>
 			<div className='preloader-background'></div>
 			<div className='preloader-content'>
-				<RandomReveal isPlaying duration={3} characters='Altera' />
+				<RandomReveal isPlaying duration={2.5} characters='ALTERA' />
 			</div>
-			{textStart ? (<TypeAnimation
-				sequence={[
-					'MIT neuroscientists, ai researchers, developers, and professors accelerating towards and a future with digital human beings'
-				]}
-				speed={60}
-				style={{ fontSize: '2em' }}
-			/>) : (<></>)}
+			<Animation delay={1000}>
+				<p className='text'>
+					MIT neuroscientists, ai researchers, developers, and professors
+					accelerating towards a future with digital human beings
+				</p>
+			</Animation>
 		</div>
 	);
 };

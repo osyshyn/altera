@@ -112,13 +112,13 @@
 					background-repeat: no-repeat;
 				}
 				.card2 {
-					background-image: url('../../../public/img/buildingCards/card2.png');
+					background-image: url('../../../public/img/buildingCards/card2.jpg');
 					background-size: cover;
 					background-position: center;
 					background-repeat: no-repeat;
 				}
 				.card3 {
-					background-image: url('../../../public/img/buildingCards/card3.png');
+					background-image: url('../../../public/img/buildingCards/card3.jpg');
 					background-size: cover;
 					background-position: center;
 					background-repeat: no-repeat;
@@ -132,17 +132,14 @@
 			display: flex;
 
 			> p {
-				width: 387px;
+				width: 400px;
 				margin-top: 24px;
 				color: #f3efef;
 				font-size: 23px;
 				font-style: normal;
 				font-weight: 400;
 				line-height: 26.4px;
-				margin-right: 130px;
-			}
-
-			> img {
+				margin-right: 120px;
 			}
 		}
 	}

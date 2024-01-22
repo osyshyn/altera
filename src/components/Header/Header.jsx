@@ -11,7 +11,7 @@ const Header = () => {
 				<p>Welcome</p>
 			</div>
 			<div className='header-running-line'>
-				<Marquee direction='right' speed='80' className='marquee-block'>
+				<Marquee direction='left' speed='25' className='marquee-block'>
 					<div className='header-running-line-text-wrapper'>
 						<p className='running-text'>
 							Announcing our $2M pre-seed fundraise, led by Andreesen Horowitz

@@ -125,36 +125,6 @@ const MainSection = () => {
 					</Animation>
 				</div>
 			</div>
-			<div className='main-imagine'>
-				<Animation>
-					<h1 className='main-imagine-header'>
-						Imagine having friends that can play any game with you and are
-						always online
-					</h1>
-				</Animation>
-				<div className='main-imagine-cards'>
-					<Animation variant='slide-left'>
-						<div className='main-imagine-cards-item card1'>
-							<p>Team up and play games with agents</p>
-						</div>
-					</Animation>
-					<Animation>
-						<div className='main-imagine-cards-item card2'>
-							<p>
-								Take your agent into any game and keep building up your
-								connection and their skills
-							</p>
-						</div>
-					</Animation>
-					<Animation variant='slide-right'>
-						<div className='main-imagine-cards-item card3'>
-							<div className='main-imagine-cards-item-image'>
-								<p>Explore an entirely new genre of agent-first games</p>
-							</div>
-						</div>
-					</Animation>
-				</div>
-			</div>
 		</div>
 	);
 };
