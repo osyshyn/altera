@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Preloader.scss';
 import { RandomReveal } from 'react-random-reveal';
 import {TypeAnimation} from 'react-type-animation'
