@@ -302,7 +302,7 @@
 				height: 530px;
 				overflow: hidden;
 				display: flex;
-				align-items: end;
+				align-items: flex-end;
 				justify-content: center;
 
 				&-image {
@@ -312,7 +312,7 @@
 					background: url('../../../public/img/cards/card3.png') no-repeat
 						center center;
 					display: flex;
-					align-items: end;
+					align-items: flex-end;
 					justify-content: center;
 
 					> p {
