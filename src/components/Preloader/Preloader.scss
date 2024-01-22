@@ -9,22 +9,8 @@
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	background-image: linear-gradient(
-		to bottom,
-		#141414,
-		#1c1c1e,
-		#232529,
-		#292e35,
-		#2f3740,
-		#364550,
-		#3c5460,
-		#42646e,
-		#4c7d81,
-		#5d9690,
-		#75b09b,
-		#96c8a2
-	);
-	opacity: 1;
+	background-image: linear-gradient(to bottom, #36454f, #36454f, #36454f, #36454f, #36454f, #374b55, #38525b, #395861, #3c676b, #447671, #548473, #699273);
+	opacity: 0.8;
 
 	&.fadeOut {
 		opacity: 0;
@@ -32,11 +18,23 @@
 	}
 
 	&-content {
-		font-size: 90px;
 		font-family: Inter;
-		letter-spacing: 5px;
 		color: #96c8a2;
-		margin-bottom: 150px;
+		font-size: 150px;
+
+		animation: spacingIn 2.5s ease-in-out;
+		animation-delay: 0;
+
+		@keyframes spacingIn {
+			from {
+				letter-spacing: 100px;
+				font-size: 200px;
+			}
+			to {
+				letter-spacing: 5px;
+				font-size: 150px;
+			}
+		}
 	}
 
 	.text {

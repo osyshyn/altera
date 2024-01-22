@@ -42,6 +42,7 @@ const MainSection = () => {
 					</Animation>
 					<Animation delay={900} variant='slide-bottom'>
 						<div className='main-section-content-buttons'>
+							<a href="#building">
 							<button className='main-section-content-buttons-down main-button'>
 								<svg
 									className='down-arrow'
@@ -73,6 +74,7 @@ const MainSection = () => {
 							<button className='main-section-content-buttons-more main-button'>
 								Learn More
 							</button>
+							</a>
 						</div>
 					</Animation>
 				</div>

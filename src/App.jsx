@@ -28,7 +28,7 @@ function App() {
 	return isLoading ? (
 		<Preloader onFinish={onFade}/>
 	) : (
-		<div className='app-wrapper'>
+		<div id='top' className='app-wrapper'>
 			<Header />
 			<MainSection />
 			<Building />

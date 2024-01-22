@@ -1,7 +1,7 @@
 import React from 'react';
 import './Preloader.scss';
 import { RandomReveal } from 'react-random-reveal';
-import Animation from '../UI/Animation/Animation';
+// import Animation from '../UI/Animation/Animation';
 
 const Preloader = ({ onFinish }) => {
 	return (
@@ -10,12 +10,12 @@ const Preloader = ({ onFinish }) => {
 			<div className='preloader-content'>
 				<RandomReveal isPlaying duration={2.5} characters='ALTERA' />
 			</div>
-			<Animation delay={1000}>
+			{/* <Animation delay={1000}>
 				<p className='text'>
 					MIT neuroscientists, ai researchers, developers, and professors
 					accelerating towards a future with digital human beings
 				</p>
-			</Animation>
+			</Animation> */}
 		</div>
 	);
 };

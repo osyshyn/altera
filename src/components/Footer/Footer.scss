@@ -114,6 +114,8 @@
 						border-radius: 16px;
 						background: #96c8a2;
 						cursor: pointer;
+						color: #141414;
+						font-size: 24px;
 					}
 				}
 			}
@@ -166,6 +168,7 @@
 			border-top: 1px solid rgba(255, 255, 255, 0.2);
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
 
 			> p {
 				margin-left: 64px;
@@ -175,6 +178,43 @@
 				font-weight: 400;
 				line-height: 19.6px;
 				opacity: 0.5;
+			}
+
+			> a {
+				margin-right: 64px;
+				width: 48px;
+				height: 48px;
+				border-radius: 16px;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				> button {
+					border-radius: 16px;
+					width: 48px;
+					height: 48px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: #1a1a1a;
+					border: 1px solid rgba(255, 255, 255, 0.16);
+					transition: background-color 0.3s, border 0.3s, color 0.3s, filter 0.3s;
+				}
+				
+				&:hover > button {
+					background-color: #222;
+					border: 1px solid hsl(120, 26%, 67%);
+					color: white;
+
+					// .up-arrow {
+					// 	filter: invert(80%) sepia(8%) saturate(1030%) hue-rotate(82deg) brightness(92%) contrast(91%);
+					// }
+				}
+
+				// .up-arrow:hover {
+				// 	filter: invert(98%) sepia(2%) saturate(6855%) hue-rotate(65deg) brightness(86%) contrast(63%);
+				// }
 			}
 		}
 	}
