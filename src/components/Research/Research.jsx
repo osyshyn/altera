@@ -5,7 +5,7 @@ import Animation from '../UI/Animation/Animation'
 const Research = () => {
 	return (
 		<Animation>
-		<div className='research'>
+		<div id='research' className='research'>
 			<div className='research-right'>
 				<div className='research-right-title'>
 					<div className='research-right-title-dot'></div>

@@ -60,7 +60,7 @@ const Founders = () => {
 
 	return (
 		<Animation>
-			<div className='founders'>
+			<div id='founders' className='founders'>
 				<div className='founders-tab'>
 					<div className='founders-tab-left'>
 						<div className='founders-tab-left-border'></div>

@@ -4,7 +4,7 @@ import Animation from '../UI/Animation/Animation';
 
 const Footer = () => {
 	return (
-		<div className='footer'>
+		<div id='contact' className='footer'>
 			<Animation>
 				<div className='footer-content'>
 					<div className='footer-content-top'>
@@ -35,11 +35,11 @@ const Footer = () => {
 						<div className='footer-content-middle-right'>
 							<div className='footer-content-middle-right-links'>
 								<h5>Quick Links</h5>
-								<a href='/'>About</a>
-								<a href='/'>Research</a>
-								<a href='/'>What we are building</a>
-								<a href='/'>Founders</a>
-								<a href='/'>Contact</a>
+								<a href='#about'>About</a>
+								<a href='#building'>What We are building</a>
+								<a href='#research'>Research</a>
+								<a href='#founders'>Founders</a>
+								<a href='#contact'>Contact</a>
 							</div>
 							<div className='footer-content-middle-right-links'>
 								<h5>Documentation</h5>

@@ -20,7 +20,7 @@ const Building = () => {
 
 	return (
 		<Animation>
-			<div className='building'>
+			<div id='building' className='building'>
 				<div className='building-left'>
 					<Animation variant='slide-top' delay={600}>
 						<img

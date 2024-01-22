@@ -4,7 +4,7 @@ import Animation from '../UI/Animation/Animation';
 
 const MainSection = () => {
 	return (
-		<div className='main'>
+		<div id="about" className='main'>
 			<div className='main-section'>
 				<div className='main-section-header'>
 					<Animation variant='slide-left'>
@@ -20,11 +20,11 @@ const MainSection = () => {
 					</Animation>
 					<Animation variant='slide-right'>
 						<div className='main-section-header-navigation'>
-							<a href='/'>About</a>
-							<a href='/'>Research</a>
-							<a href='/'>What We are building</a>
-							<a href='/'>Founders</a>
-							<a href='/'>Founders</a>
+							<a href='#about'>About</a>
+							<a href='#building'>What We are building</a>
+							<a href='#research'>Research</a>
+							<a href='#founders'>Founders</a>
+							<a href='#contact'>Contact</a>
 						</div>
 					</Animation>
 				</div>
