@@ -74,7 +74,7 @@ const Building = () => {
 								: ''}
 						</p>
 						<Animation delay={600}>
-							<img src='/img/jumper.png' alt='' />
+							<img src='/img/jumper.png' alt='' className='jumper'/>
 						</Animation>
 					</div>
 				</div>

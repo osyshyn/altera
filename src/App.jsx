@@ -18,11 +18,11 @@ function App() {
 	useEffect(() => {
 		setTimeout(() => {
 			setOnFade(true);
-		}, 4000);
+		}, 2500);
 
 		setTimeout(() => {
 			setIsLoading(false);
-		}, 4500);
+		}, 3000);
 	}, []);
 
 	return isLoading ? (

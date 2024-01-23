@@ -22,7 +22,7 @@
 		color: #96c8a2;
 		font-size: 150px;
 
-		animation: spacingIn 2.5s ease-in-out;
+		animation: spacingIn 1.5s ease-in-out;
 		animation-delay: 0;
 
 		@keyframes spacingIn {
@@ -43,5 +43,23 @@
 		justify-content: center;
 		font-size: 40px;
 		text-align: center;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	.preloader-content {
+		font-size: 65px;
+	}
+
+	@keyframes spacingIn {
+		from {
+			letter-spacing: 15px;
+			font-size: 75px;
+		}
+		to {
+			letter-spacing: 5px;
+			font-size: 65px;
+		}
 	}
 }

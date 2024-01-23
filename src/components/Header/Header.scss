@@ -102,3 +102,18 @@
 
 .marquee-block {
 }
+
+@media only screen and (max-width: 600px) {
+	.header {
+		width: 93%;
+	}
+
+	.header-running-line {
+		width: 80%;
+	}
+
+	.header-button {
+		width: 13%;
+		justify-content: flex-end;
+	}
+}

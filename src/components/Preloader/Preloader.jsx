@@ -8,7 +8,7 @@ const Preloader = ({ onFinish }) => {
 		<div className={`preloader ${onFinish ? 'fadeOut' : ''}`}>
 			<div className='preloader-background'></div>
 			<div className='preloader-content'>
-				<RandomReveal isPlaying duration={2.5} characters='ALTERA' />
+				<RandomReveal isPlaying duration={1.5} characters='ALTERA' />
 			</div>
 			{/* <Animation delay={1000}>
 				<p className='text'>
