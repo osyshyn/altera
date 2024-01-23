@@ -109,11 +109,22 @@
 	}
 
 	.header-running-line {
-		width: 80%;
+		width: 55%;
 	}
 
 	.header-button {
 		width: 13%;
 		justify-content: flex-end;
 	}
+
+	.header-title {
+
+		width: 25%;
+		justify-content: flex-start;
+
+		> p {
+			font-size: 13px;
+		}
+	}
+
 }
