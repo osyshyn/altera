@@ -13,7 +13,13 @@ body {
 }
 
 	@media only screen and (max-width: 600px) {
-		body {
-			// overflow-x: hidden;
+		.wrapper {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	
+		.wrapper > div {
+			width: 100%;
 		}
 }
