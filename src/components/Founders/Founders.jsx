@@ -59,93 +59,101 @@ const Founders = () => {
 	};
 
 	return (
-		<Animation>
-			<div id='founders' className='founders'>
-				<div className='founders-tab'>
-					<div className='founders-tab-left'>
-						<div className='founders-tab-left-border'></div>
-					</div>
-					<div className='founders-tab-center'>
-						<div className='founders-tab-center-dot'></div>
-						<div className='founders-tab-center-text'>Founders</div>
-					</div>
-					<div className='founders-tab-right'>
-						<div className='founders-tab-right-border'></div>
-					</div>
-				</div>
-				<div className='slides-wrapper'>
-					{slides.map((slide, index) => (
-						<div
-							key={index}
-							className={`founders-main ${
-								currentSlide === index ? '' : 'hide'
-							}`}
-							style={{
-								backgroundImage: `url(${slide.backgroundImage})`,
-							}}
-						>
-							<div className='founders-main-left'>
-								<Animation delay={400} variant='slide-left'>
-									<h1 className='founders-main-left-header'>{slide.header}</h1>
-								</Animation>
-								<Animation delay={500} variant='slide-left'>
-									<div className='founders-main-left-counter'>
-										{slide.count} / 04
-									</div>
-								</Animation>
-								<Animation delay={600} variant='slide-left'>
-									<div className='founders-main-left-name'>{slide.name}</div>
-								</Animation>
-								<Animation delay={700} variant='slide-left'>
-									<div className='founders-main-left-details'>
-										{slide.details}
-									</div>
-								</Animation>
-								<Animation delay={800} variant='slide-left'>
-									<div className='founders-main-left-quote'>
-										<div className='founders-main-left-quote-img'>“</div>
-										<div className='founders-main-left-quote-text'>
-											{slide.text}
-										</div>
-									</div>
-								</Animation>
-							</div>
-							<div className='founders-main-right'>
-								<Animation delay={500} variant='slide-right'>
-									<img
-										className='founders-main-right-img'
-										src={`${slide.img}`}
-										alt='img'
-									/>
-								</Animation>
-							</div>
+		<div className='wrapper'>
+			<Animation>
+				<div id='founders' className='founders'>
+					<div className='founders-tab'>
+						<div className='founders-tab-left'>
+							<div className='founders-tab-left-border'></div>
 						</div>
-					))}
-				</div>
+						<div className='founders-tab-center'>
+							<div className='founders-tab-center-dot'></div>
+							<div className='founders-tab-center-text'>Founders</div>
+						</div>
+						<div className='founders-tab-right'>
+							<div className='founders-tab-right-border'></div>
+						</div>
+					</div>
+					<div className='slides-wrapper'>
+						{slides.map((slide, index) => (
+							<div
+								key={index}
+								className={`founders-main ${
+									currentSlide === index ? '' : 'hide'
+								}`}
+								style={{
+									backgroundImage: `url(${slide.backgroundImage})`,
+								}}
+							>
+								<div className='founders-main-left'>
+									<Animation delay={400} variant='slide-left'>
+										<h1 className='founders-main-left-header'>
+											{slide.header}
+										</h1>
+									</Animation>
+									<Animation delay={500} variant='slide-left'>
+										<div className='founders-main-left-counter'>
+											{slide.count} / 04
+										</div>
+									</Animation>
+									<Animation delay={600} variant='slide-left'>
+										<div className='founders-main-left-name'>{slide.name}</div>
+									</Animation>
+									<Animation delay={700} variant='slide-left'>
+										<div className='founders-main-left-details'>
+											{slide.details}
+										</div>
+									</Animation>
+									<Animation delay={800} variant='slide-left'>
+										<div className='founders-main-left-quote'>
+											<div className='founders-main-left-quote-img'>“</div>
+											<div className='founders-main-left-quote-text'>
+												{slide.text}
+											</div>
+										</div>
+									</Animation>
+								</div>
+								<div className='founders-main-right'>
+									<Animation delay={500} variant='slide-right'>
+										<img
+											className='founders-main-right-img'
+											src={`${slide.img}`}
+											alt='img'
+										/>
+									</Animation>
+								</div>
+							</div>
+						))}
+					</div>
 
-				<div className='founders-bottom'>
-					<div className='founders-bottom-block'>
-						<div className='founders-bottom-block-border'></div>
-					</div>
-					<div className='founders-bottom-buttons'>
-						<button
-							onClick={prevSlide}
-							disabled={currentSlide === 0}
-							className={currentSlide === 0 ? 'disable' : ''}
-						>
-							<img className='left-arrow' src='/img/left-arrow.svg' alt='' />
-						</button>
-						<button
-							onClick={nextSlide}
-							disabled={currentSlide === 3}
-							className={currentSlide === 3 ? 'disable' : ''}
-						>
-							<img className='right-arrow' src='/img/right-arrow.svg' alt='' />
-						</button>
+					<div className='founders-bottom'>
+						<div className='founders-bottom-block'>
+							<div className='founders-bottom-block-border'></div>
+						</div>
+						<div className='founders-bottom-buttons'>
+							<button
+								onClick={prevSlide}
+								disabled={currentSlide === 0}
+								className={currentSlide === 0 ? 'disable' : ''}
+							>
+								<img className='left-arrow' src='/img/left-arrow.svg' alt='' />
+							</button>
+							<button
+								onClick={nextSlide}
+								disabled={currentSlide === 3}
+								className={currentSlide === 3 ? 'disable' : ''}
+							>
+								<img
+									className='right-arrow'
+									src='/img/right-arrow.svg'
+									alt=''
+								/>
+							</button>
+						</div>
 					</div>
 				</div>
-			</div>
-		</Animation>
+			</Animation>
+		</div>
 	);
 };
 

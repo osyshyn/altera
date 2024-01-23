@@ -143,6 +143,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+	.wrapper {
+		width: 100%;
+	}
+	
 	.Animation_animation__FcNiM.Animation_slide-bottom__Vbogf.Animation_active__lmaN2 {
 		width: 100%;
 		display: flex;
@@ -180,6 +184,7 @@
 	}
 
 	.swiper-wrapper {
+		width: 90%;
 	}
 
 	.building-right {
