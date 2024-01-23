@@ -222,8 +222,10 @@
 @media only screen and (max-width: 600px) {
 	.wrapper{
 		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
-	
+
 	.founders-main-left-header {
 		font-size: 35px;
 		margin-bottom: 30px;
