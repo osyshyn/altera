@@ -9,7 +9,8 @@
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	background-image: linear-gradient(to bottom, #36454f, #36454f, #36454f, #36454f, #36454f, #374b55, #38525b, #395861, #3c676b, #447671, #548473, #699273);
+	background: rgb(150,200,162);
+background: linear-gradient(0deg, rgba(150,200,162,1) 0%, rgba(54,69,79,1) 33%, rgba(19,19,19,1) 66%, rgba(0,0,0,1) 100%);
 	opacity: 0.8;
 
 	&.fadeOut {
@@ -21,6 +22,7 @@
 		font-family: Inter;
 		color: #96c8a2;
 		font-size: 150px;
+		font-weight: 500;
 
 		animation: spacingIn 1.5s ease-in-out;
 		animation-delay: 0;

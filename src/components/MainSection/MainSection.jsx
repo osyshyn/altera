@@ -26,24 +26,24 @@ const MainSection = () => {
 								</p>
 							</div>
 							<Animation variant='slide-right'>
-						<button className='menu-button' onClick={openMenu}>
-							<svg
-								xmlns='http://www.w3.org/2000/svg'
-								width='32'
-								height='32'
-								viewBox='0 0 32 32'
-								fill='none'
-							>
-								<path
-									d='M4 8H28M4 16H28M4 24H28'
-									stroke='#96C196'
-									stroke-width='2'
-									stroke-linecap='round'
-									stroke-linejoin='round'
-								/>
-							</svg>
-						</button>
-					</Animation>
+								<button className='menu-button' onClick={openMenu}>
+									<svg
+										xmlns='http://www.w3.org/2000/svg'
+										width='32'
+										height='32'
+										viewBox='0 0 32 32'
+										fill='none'
+									>
+										<path
+											d='M4 8H28M4 16H28M4 24H28'
+											stroke='#96C196'
+											stroke-width='2'
+											stroke-linecap='round'
+											stroke-linejoin='round'
+										/>
+									</svg>
+								</button>
+							</Animation>
 						</div>
 					</Animation>
 					<Animation variant='slide-right'>
@@ -55,34 +55,51 @@ const MainSection = () => {
 							<a href='#contact'>Contact</a>
 						</div>
 					</Animation>
-					
+				</div>
+				<div className='main-section-text-mobile'>
+					<Animation>
+						<div className='main-section-header-logo-text-mobile'>
+							<p>
+								Building digital human beings that live, love, and grow with us
+							</p>
+						</div>
+					</Animation>
 				</div>
 				<div className={`main-section-menu ${isMenuOpen ? 'open' : ''}`}>
-					<div className="main-section-menu-logo">
-
-					<div className='main-section-menu-button' onClick={CloseMenu}>
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
-							width='20'
-							height='16'
-							viewBox='0 0 20 16'
-							fill='#96C8A2'
-						>
-							<path
-								d='M19.5078 8.57987L3.67261 8.59788C3.41579 8.59817 3.20785 8.80642 3.20794 9.06316C3.20802 9.29235 3.37571 9.48493 3.59858 9.53874C4.49984 9.75636 5.32245 10.2296 5.96529 10.9054L8.94764 13.8872L7.70968 15.125L0.281923 7.69838L7.69093 0.290528L8.92889 1.52838L6.04029 4.41652C5.39372 5.13612 4.54089 5.63305 3.60356 5.84336C3.3686 5.89605 3.18928 6.09685 3.18928 6.33754C3.18928 6.60231 3.40388 6.81697 3.66878 6.81697L19.5076 6.8168L19.5078 8.57987Z'
-								fill='#F3EFEF'
-							/>
-						</svg>
-					</div>
-					<img src='/img/logo.svg' alt='logo' />
-					<div className="main-section-menu-empty"></div>
+					<div className='main-section-menu-logo'>
+						<div className='main-section-menu-button' onClick={CloseMenu}>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								width='20'
+								height='16'
+								viewBox='0 0 20 16'
+								fill='#96C8A2'
+							>
+								<path
+									d='M19.5078 8.57987L3.67261 8.59788C3.41579 8.59817 3.20785 8.80642 3.20794 9.06316C3.20802 9.29235 3.37571 9.48493 3.59858 9.53874C4.49984 9.75636 5.32245 10.2296 5.96529 10.9054L8.94764 13.8872L7.70968 15.125L0.281923 7.69838L7.69093 0.290528L8.92889 1.52838L6.04029 4.41652C5.39372 5.13612 4.54089 5.63305 3.60356 5.84336C3.3686 5.89605 3.18928 6.09685 3.18928 6.33754C3.18928 6.60231 3.40388 6.81697 3.66878 6.81697L19.5076 6.8168L19.5078 8.57987Z'
+									fill='#F3EFEF'
+								/>
+							</svg>
+						</div>
+						<img src='/img/logo.svg' alt='logo' />
+						<div className='main-section-menu-empty'></div>
 					</div>
 					<div className='main-section-menu-content'>
-						<a href='#about' onClick={CloseMenu}>About</a>
-						<a href='#building' onClick={CloseMenu}>What We are building</a>
-						<a href='#research' onClick={CloseMenu}>Research</a>
-						<a href='#founders' onClick={CloseMenu}>Founders</a>
-						<a href='#contact' onClick={CloseMenu}>Contact</a>
+						<a href='#about' onClick={CloseMenu}>
+							About
+						</a>
+						<a href='#building' onClick={CloseMenu}>
+							What We are building
+						</a>
+						<a href='#research' onClick={CloseMenu}>
+							Research
+						</a>
+						<a href='#founders' onClick={CloseMenu}>
+							Founders
+						</a>
+						<a href='#contact' onClick={CloseMenu}>
+							Contact
+						</a>
 					</div>
 				</div>
 				<div className='main-section-content'>
