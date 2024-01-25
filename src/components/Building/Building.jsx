@@ -47,21 +47,40 @@ const Building = () => {
 						<div className='building-right-top'></div>
 						<Animation variant='slide-right' delay={600}>
 							<div className='building-right-middle'>
-								<Swiper
-									modules={[Pagination]}
-									slidesPerView={'auto'}
-									spaceBetween={30}
-									loop={true}
-									pagination={{
-										clickable: true,
-									}}
-									className='building-right-middle-swiper'
-									onSlideChange={handleSlideChange}
-								>
-									<SwiperSlide className='card1'></SwiperSlide>
-									<SwiperSlide className='card2'></SwiperSlide>
-									<SwiperSlide className='card3'></SwiperSlide>
-								</Swiper>
+								<div className='swiper-desc'>
+									<Swiper
+										modules={[Pagination]}
+										slidesPerView={'auto'}
+										spaceBetween={30}
+										loop={true}
+										pagination={{
+											clickable: true,
+										}}
+										className='building-right-middle-swiper'
+										onSlideChange={handleSlideChange}
+									>
+										<SwiperSlide className='swiper-card1'></SwiperSlide>
+										<SwiperSlide className='swiper-card2'></SwiperSlide>
+										<SwiperSlide className='swiper-card3'></SwiperSlide>
+									</Swiper>
+								</div>
+								<div className='swiper-mobile'>
+									<Swiper
+										modules={[Pagination]}
+										slidesPerView={1}
+										spaceBetween={30}
+										loop={true}
+										pagination={{
+											clickable: true,
+										}}
+										className='building-right-middle-swiper-mobile'
+										onSlideChange={handleSlideChange}
+									>
+										<SwiperSlide className='swiper-card1'></SwiperSlide>
+										<SwiperSlide className='swiper-card2'></SwiperSlide>
+										<SwiperSlide className='swiper-card3'></SwiperSlide>
+									</Swiper>
+								</div>
 							</div>
 						</Animation>
 						<div className='building-right-bottom'>

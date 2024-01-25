@@ -15,7 +15,7 @@ const Footer = () => {
 							<div className='footer-content-middle-left-title'>
 								<div className='footer-content-middle-left-title-dot'></div>
 								<div className='footer-content-middle-left-title-text'>
-									Sign Up for Private Beta
+									For the curious
 								</div>
 							</div>
 							<form action='' className='footer-content-middle-left-form'>
@@ -23,17 +23,17 @@ const Footer = () => {
 								<p>Type:</p>
 								<div className='footer-content-middle-left-form-checkbox'>
 									<input type='checkbox' />
-									<p>Investor</p>
+									<p>Potential Investor</p>
 								</div>
 								<div className='footer-content-middle-left-form-checkbox'>
 									<input type='checkbox' />
-									<p>Partner</p>
+									<p>Potential Partner</p>
 								</div>
 								<button>Submit</button>
 							</form>
 						</div>
 						<div className='footer-content-middle-right'>
-							<div className='footer-content-middle-right-links'>
+							<div className='footer-content-middle-right-links links'>
 								<h5>Quick Links</h5>
 								<a href='#about'>About</a>
 								<a href='#building'>What We are building</a>
